@@ -58,7 +58,7 @@
   &__name {
     display: flex;
     gap: 1.9rem;
-    input{
+    input {
       width: 105%;
     }
   }
@@ -77,21 +77,20 @@
     &__details {
       flex-direction: column;
       gap: 3rem;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
     &__wrapper {
       iframe {
         display: none;
       }
     }
-    &__forms{
-      max-width: 120%;
+    &__forms {
+      max-width: 20rem;
     }
-    &__name{
-      display: flex;
+    &__name {
       flex-direction: column;
       gap: 0%;
-      input{
+      input {
         max-width: 99%;
       }
     }

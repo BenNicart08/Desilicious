@@ -226,12 +226,13 @@
     }
   }
   .homeMenuList {
+    padding-bottom: 0;
     &__wrapper {
       @include evenGrid(1, 2rem);
     }
   }
   .bat {
-    padding: 1rem 0;
+    padding: 0;
     &__wrapper {
       @include centerAll;
       background-image: none;

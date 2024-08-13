@@ -1006,16 +1006,15 @@ img {
   .contacts__details {
     flex-direction: column;
     gap: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   .contacts__wrapper iframe {
     display: none;
   }
   .contacts__forms {
-    max-width: 120%;
+    max-width: 20rem;
   }
   .contacts__name {
-    display: flex;
     flex-direction: column;
     gap: 0%;
   }
@@ -1275,13 +1274,16 @@ img {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
+  .homeMenuList {
+    padding-bottom: 0;
+  }
   .homeMenuList__wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
   .bat {
-    padding: 1rem 0;
+    padding: 0;
   }
   .bat__wrapper {
     display: flex;
