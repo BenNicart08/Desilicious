@@ -1,0 +1,72 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contacts {
+  padding: 3rem 0;
+  // @include centerAll;
+  &__wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    img {
+      margin: 3rem 0;
+      border-radius: 3rem;
+    }
+  }
+  &__details {
+    @include centerAll;
+    gap: 5rem;
+    a {
+      color: $clr--secondary;
+    }
+    i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+  }
+  &__forms {
+    max-width: 60%;
+    margin: 0 auto;
+    h4 {
+      font-size: 2rem;
+      color: $clr--light;
+    }
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    input {
+      display: flex;
+      width: 98%;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      color: $clr--light;
+      background-color: transparent;
+      border: 1px solid $clr--light;
+      border-radius: 1rem;
+    }
+    textarea {
+      @extend input;
+      height: 10rem;
+    }
+    span {
+      padding-left: 1rem;
+    }
+  }
+  &__name {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__labelName {
+    display: flex;
+    gap: 14rem;
+  }
+  &__button {
+    @include centerAll;
+    padding-bottom: 2rem;
+  }
+}

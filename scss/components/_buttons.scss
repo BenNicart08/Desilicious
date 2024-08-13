@@ -50,4 +50,18 @@
       color: $clr--secondary;
     }
   }
+  &.bg--products {
+    @extend .btn;
+    padding: 1rem 2rem;
+    background-color: $clr--primary;
+    border-radius: 2rem;
+    color: $clr--light;
+    border: 1px solid $clr--secondary;
+    font-weight: 600;
+    &:hover {
+      background-color: $clr--light;
+      border: 1px solid $clr--secondary;
+      color: $clr--secondary;
+    }
+  }
 }

@@ -545,6 +545,7 @@ form,
 label,
 input,
 .bat__table textarea,
+.contacts__forms textarea,
 textarea,
 legend,
 table,
@@ -605,7 +606,7 @@ img {
   list-style: none;
 }
 
-.btn, .btn.bg--footer, .btn.bg--clr, .btn.radius, .btn.bg--secondary {
+.btn, .btn.bg--products, .btn.bg--footer, .btn.bg--clr, .btn.radius, .btn.bg--secondary {
   padding: 0.8rem 2rem;
   background-color: transparent;
   border: 1px solid transparent;
@@ -649,6 +650,19 @@ img {
   font-weight: 600;
 }
 .btn.bg--footer:hover {
+  background-color: #fff;
+  border: 1px solid #dd1d01;
+  color: #dd1d01;
+}
+.btn.bg--products {
+  padding: 1rem 2rem;
+  background-color: #20373c;
+  border-radius: 2rem;
+  color: #fff;
+  border: 1px solid #dd1d01;
+  font-weight: 600;
+}
+.btn.bg--products:hover {
   background-color: #fff;
   border: 1px solid #dd1d01;
   color: #dd1d01;
@@ -774,6 +788,134 @@ img {
 }
 .header__nav li a:hover {
   color: #dd1d01;
+}
+
+.blog {
+  padding: 4rem 0;
+}
+.blog__wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.blog__card {
+  margin-bottom: 3rem;
+}
+.blog__card img {
+  border-radius: 3rem;
+}
+.blog__details h4 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+.blog__details p {
+  margin-bottom: 2rem;
+}
+
+.chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+.chef__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+.chef__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.chef__title h3 {
+  font-size: 2.5rem;
+}
+.chef__card img {
+  border-radius: 2rem;
+}
+.chef__card h4 {
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
+}
+.chef__card p {
+  font-weight: 600;
+  color: #dd1d01;
+}
+.chef__card i {
+  color: #fff;
+}
+
+.contacts {
+  padding: 3rem 0;
+}
+.contacts__wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.contacts__wrapper img {
+  margin: 3rem 0;
+  border-radius: 3rem;
+}
+.contacts__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+.contacts__details a {
+  color: #dd1d01;
+}
+.contacts__details i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contacts__details p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.contacts__forms {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.contacts__forms h4 {
+  font-size: 2rem;
+  color: #fff;
+}
+.contacts__forms p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contacts__forms input, .contacts__forms textarea {
+  display: flex;
+  width: 98%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+.contacts__forms textarea {
+  height: 10rem;
+}
+.contacts__forms span {
+  padding-left: 1rem;
+}
+.contacts__name {
+  justify-content: space-between;
+  display: flex;
+}
+.contacts__labelName {
+  display: flex;
+  gap: 14rem;
+}
+.contacts__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .homeBanner {
@@ -1063,4 +1205,87 @@ img {
 .menuList__img img {
   border-radius: 3rem;
   max-width: 80%;
+}
+
+.products {
+  padding: 5rem 0;
+}
+.products__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.products__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  gap: 3rem;
+}
+.products__card {
+  text-align: center;
+  border: 1px solid #dd1d01;
+  border-radius: 3rem;
+  padding: 2rem;
+}
+.products__card img {
+  width: 70%;
+}
+.products__details {
+  padding: 0.5rem 0;
+}
+.products__details h4 {
+  font-size: 2rem;
+}
+.products__details p {
+  color: #dd1d01;
+  margin-bottom: 2rem;
+}
+.products__details i {
+  padding-right: 1rem;
+}
+.products__search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.products__search a {
+  position: relative;
+  right: 20%;
+  color: #fff;
+}
+.products__nav {
+  max-width: 70%;
+}
+.products__nav input {
+  background-color: #0e1516;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 15rem;
+  color: #fff;
+}
+.products__nav input placeholder {
+  color: #fff;
+}
+.products__nav input::-moz-placeholder {
+  font-family: "Patrick Hand", cursive;
+  color: #fff;
+}
+.products__nav input::placeholder {
+  font-family: "Patrick Hand", cursive;
+  color: #fff;
+}
+.products__categories {
+  padding: 1.5rem;
+  background-color: #0e1516;
+  border-radius: 1rem;
+}
+.products__categories h4 {
+  font-size: 2rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.products__categories td {
+  padding-right: 3rem;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=main.min.css.map */

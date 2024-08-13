@@ -1,0 +1,81 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.products {
+  padding: 5rem 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  &__cards {
+    @include evenGrid(3, 2rem);
+    gap: 3rem;
+  }
+  &__card {
+    text-align: center;
+    border: 1px solid $clr--secondary;
+    border-radius: 3rem;
+    padding: 2rem;
+    img {
+      width: 70%;
+    }
+  }
+  &__details {
+    padding: 0.5rem 0;
+    h4 {
+      font-size: 2rem;
+    }
+    p {
+      color: $clr--secondary;
+      margin-bottom: 2rem;
+    }
+    i {
+      padding-right: 1rem;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    a {
+      position: relative;
+      right: 20%;
+      color: $clr--light;
+    }
+  }
+  &__nav {
+    max-width: 70%;
+    input {
+      background-color: $clr--dark;
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 15rem;
+      color: $clr--light;
+      placeholder{
+        color: $clr--light;
+      }
+      &::placeholder {
+        font-family: $font-primary;
+        color: $clr--light;
+      }
+    }
+  }
+  &__categories {
+    padding: 1.5rem;
+    background-color: $clr--dark;
+    border-radius: 1rem;
+    h4 {
+      font-size: 2rem;
+      border-bottom: 1px solid $clr--light;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    td {
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
