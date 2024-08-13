@@ -926,12 +926,16 @@ img {
 }
 .contacts {
   padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .contacts__wrapper {
   max-width: 70%;
   margin: 0 auto;
 }
-.contacts__wrapper img {
+.contacts__wrapper iframe {
   margin: 3rem 0;
   border-radius: 3rem;
 }
@@ -1003,7 +1007,7 @@ img {
     display: grid;
     margin-bottom: 3rem;
   }
-  .contacts__wrapper img {
+  .contacts__wrapper iframe {
     display: none;
   }
   .contacts__forms {
@@ -1360,7 +1364,7 @@ img {
 }
 .products__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 5rem;
 }
 .products__cards {

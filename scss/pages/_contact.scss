@@ -3,11 +3,11 @@
 
 .contacts {
   padding: 8rem 0;
-  // @include centerAll;
+  @include centerAll;
   &__wrapper {
     max-width: 70%;
     margin: 0 auto;
-    img {
+    iframe {
       margin: 3rem 0;
       border-radius: 3rem;
     }
@@ -79,7 +79,7 @@
       margin-bottom: 3rem;
     }
     &__wrapper {
-      img {
+      iframe {
         display: none;
       }
     }
