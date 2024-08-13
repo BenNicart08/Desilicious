@@ -56,7 +56,7 @@
       padding: 1rem;
       width: 15rem;
       color: $clr--light;
-      placeholder{
+      placeholder {
         color: $clr--light;
       }
       &::placeholder {
@@ -82,17 +82,16 @@
   }
 }
 
-@include mediaQuery(520px){
-  .products{
-    &__wrapper{
+@include mediaQuery(520px) {
+  .products {
+    &__wrapper {
       @include evenGrid(1, 1rem);
     }
-    &__cards{
+    &__cards {
       @include evenGrid(1, 1rem);
     }
-    &__nav{
+    &__nav {
       justify-self: center;
     }
   }
 }
-

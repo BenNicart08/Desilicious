@@ -225,25 +225,25 @@
       @include evenGrid(1, 2rem);
     }
   }
-  .homeMenuList{
+  .homeMenuList {
     &__wrapper {
       @include evenGrid(1, 2rem);
     }
   }
-  .bat{
+  .bat {
     padding: 1rem 0;
     &__wrapper {
-    @include centerAll;
-    background-image: none;
-  }
-  &__table{
-    form{
-      width: 25rem;
+      @include centerAll;
+      background-image: none;
+    }
+    &__table {
+      form {
+        width: 25rem;
+      }
     }
   }
-  }
-  .homeBlog{
-    &__wrapper{
+  .homeBlog {
+    &__wrapper {
       @include evenGrid(1, 5rem);
     }
   }

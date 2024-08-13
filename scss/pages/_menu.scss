@@ -10,7 +10,7 @@
     margin-bottom: 2rem;
     h2 {
       font-size: 2.5rem;
-      font-family: $font-primary
+      font-family: $font-primary;
     }
   }
   &__wrapper {
@@ -31,33 +31,33 @@
       text-align: center;
     }
   }
-  &__img{
+  &__img {
     text-align: center;
-    img{
-    border-radius: 3rem;
-    max-width: 80%;
+    img {
+      border-radius: 3rem;
+      max-width: 80%;
+    }
   }
-  }
-  &__content{
+  &__content {
     margin-bottom: 5rem;
   }
 }
 
 // RESPONSIVE
-@include mediaQuery(520px){
- .menuList{
-  &__wrapper{
-    @include evenGrid(1, 1rem)
-  }
-  &__food{
-    ul{
-      flex-direction: column;
+@include mediaQuery(520px) {
+  .menuList {
+    &__wrapper {
+      @include evenGrid(1, 1rem);
+    }
+    &__food {
+      ul {
+        flex-direction: column;
+      }
+    }
+    &__img {
+      img {
+        max-width: 150%;
+      }
     }
   }
-  &__img{
-    img{
-      max-width: 150%;
-    }
-  }
- }
 }
