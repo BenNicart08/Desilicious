@@ -2,7 +2,8 @@
 @use "../base/" as *;
 
 .products {
-  padding: 5rem 0;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   &__wrapper {
     display: flex;
     flex-direction: row;
@@ -29,6 +30,8 @@
     }
     p {
       color: $clr--secondary;
+      font-size: 1.5rem;
+      font-weight: 500;
       margin-bottom: 2rem;
     }
     i {
@@ -75,6 +78,20 @@
     td {
       padding-right: 3rem;
       padding-bottom: 1rem;
+    }
+  }
+}
+
+@include mediaQuery(520px){
+  .products{
+    &__wrapper{
+      @include evenGrid(1, 1rem);
+    }
+    &__cards{
+      @include evenGrid(1, 1rem);
+    }
+    &__nav{
+      justify-self: center;
     }
   }
 }

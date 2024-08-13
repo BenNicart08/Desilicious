@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desilicious</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <link
       rel="stylesheet"
@@ -14,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -31,6 +31,11 @@
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -46,9 +51,7 @@
             >
             <a href=""
               ><i class="fa-solid fa-location-dot"></i>
-              <p>
-                4148 Rose Avenue, New Orleans, LA, Lousiana, 70114
-              </p></a
+              <p>4148 Rose Avenue, New Orleans, LA, Lousiana, 70114</p></a
             >
             <a href=""
               ><i class="fa-solid fa-earth-asia"></i>
@@ -57,21 +60,23 @@
           </div>
           <img src="./desilicious/IMG/maps.png" alt="" />
           <div class="contacts__forms">
-            <h4 class="text--secondary text--center ">Get in Touch</h4>
+            <h4 class="text--secondary text--center">Get in Touch</h4>
             <p>Make it happen in 4 easy steps! Best Of Luck</p>
             <form>
-             <div class="contacts__labelName">
-                <span>First Name</span>
-                <span>Last Name</span>
-             </div>
               <div class="contacts__name">
-                <input type="text"/>
-                <input type="text"/>
+                <div class="contacts__labelName">
+                  <span>First Name</span>
+                  <input type="text" />
+                </div>
+                <div class="contacts__labelName1">
+                  <span>Last Name</span>
+                  <input type="text" />
+                </div>
               </div>
-                <span>Email</span>
+              <span>Email</span>
               <input type="email" />
-                <span>Subject</span>
-              <input type="subject"  />
+              <span>Subject</span>
+              <input type="subject" />
               <span>Message</span>
               <textarea name=""></textarea>
               <div class="contacts__button">
@@ -96,21 +101,23 @@
               Australia
             </li>
           </ul>
-          <ul>
-            <li><h4 class="mb--2">Useful Link</h4></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Food Menu</a></li>
-            <li><a href="">My Account</a></li>
-            <li><a href="">List an Item</a></li>
-          </ul>
-          <ul>
-            <li><h4 class="mb--2">Community</h4></li>
-            <li><a href="">Map</a></li>
-            <li><a href="">Store Location</a></li>
-            <li><a href="">Photography</a></li>
-            <li><a href="">Games</a></li>
-            <li><a href="">Music</a></li>
-          </ul>
+          <div class="footer__links">
+            <ul>
+              <li><h4 class="mb--2">Useful Link</h4></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Food Menu</a></li>
+              <li><a href="">My Account</a></li>
+              <li><a href="">List an Item</a></li>
+            </ul>
+            <ul>
+              <li><h4 class="mb--2">Community</h4></li>
+              <li><a href="">Map</a></li>
+              <li><a href="">Store Location</a></li>
+              <li><a href="">Photography</a></li>
+              <li><a href="">Games</a></li>
+              <li><a href="">Music</a></li>
+            </ul>
+          </div>
           <div class="footer__input">
             <h4 class="mb--2">Community</h4>
             <div class="footer__subscribe">
@@ -135,13 +142,9 @@
         </div>
       </div>
     </footer>
-
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./JS/toggle__menu.js"></script>
     <script src="./JS/slider.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

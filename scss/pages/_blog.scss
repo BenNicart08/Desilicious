@@ -1,26 +1,36 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.blog{
-    padding: 4rem 0;
- &__wrapper{
+.blog {
+  padding: 8rem 0;
+  &__wrapper {
     max-width: 70%;
     margin: 0 auto;
- }
- &__card{
+  }
+  &__card {
     margin-bottom: 3rem;
-    img{
-        border-radius: 3rem;    
+    img {
+      border-radius: 3rem;
     }
- }
- &__details{
-    h4{
-        font-size: 1.5rem;
-        margin: 2rem 0;
+  }
+  &__details {
+    h4 {
+      font-size: 1.5rem;
+      margin: 2rem 0;
     }
-    p{
-        margin-bottom: 2rem;
+    p {
+      margin-bottom: 2rem;
     }
- }
-    
+  }
+}
+
+@include mediaQuery(520px) {
+  .blog {
+    &__wrapper {
+      max-width: 100%;
+    }
+    &__card{
+        text-align: center;
+    }
+  }
 }

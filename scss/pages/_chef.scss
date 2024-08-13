@@ -3,7 +3,7 @@
 
 .chef {
   @include centerAll;
-  padding: 3rem 0;
+  padding: 7rem 0;
   &__wrapper {
     @include evenGrid(4, 4rem);
   }
@@ -26,8 +26,17 @@
       font-weight: 600;
       color: $clr--secondary;
     }
-    i{
-        color: $clr--light;
+    i {
+      color: $clr--light;
+    }
+  }
+}
+
+
+@include mediaQuery(520px){
+  .chef{
+    &__wrapper{
+      @include evenGrid(1, 1rem)
     }
   }
 }

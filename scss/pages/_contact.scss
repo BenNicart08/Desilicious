@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .contacts {
-  padding: 3rem 0;
+  padding: 8rem 0;
   // @include centerAll;
   &__wrapper {
     max-width: 70%;
@@ -39,7 +39,6 @@
       text-align: center;
     }
     input {
-      display: flex;
       width: 98%;
       margin: 0.5rem;
       padding: 0.5rem;
@@ -57,16 +56,43 @@
     }
   }
   &__name {
-    justify-content: space-between;
     display: flex;
+    gap: 1.9rem;
+    input{
+      width: 105%;
+    }
   }
 
   &__labelName {
-    display: flex;
     gap: 14rem;
   }
   &__button {
     @include centerAll;
     padding-bottom: 2rem;
+  }
+}
+
+@include mediaQuery(520px) {
+  .contacts {
+    &__details {
+      display: grid;
+      margin-bottom: 3rem;
+    }
+    &__wrapper {
+      img {
+        display: none;
+      }
+    }
+    &__forms{
+      max-width: 120%;
+    }
+    &__name{
+      display: flex;
+      flex-direction: column;
+      gap: 0%;
+      input{
+        max-width: 99%;
+      }
+    }
   }
 }

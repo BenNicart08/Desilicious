@@ -2,7 +2,8 @@
 @use "../base/" as *;
 
 .menuList {
-  padding: 2rem 0;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
   &__title {
     @include centerAll;
     flex-direction: column;
@@ -37,5 +38,26 @@
     max-width: 80%;
   }
   }
-  
+  &__content{
+    margin-bottom: 5rem;
+  }
+}
+
+// RESPONSIVE
+@include mediaQuery(520px){
+ .menuList{
+  &__wrapper{
+    @include evenGrid(1, 1rem)
+  }
+  &__food{
+    ul{
+      flex-direction: column;
+    }
+  }
+  &__img{
+    img{
+      max-width: 150%;
+    }
+  }
+ }
 }

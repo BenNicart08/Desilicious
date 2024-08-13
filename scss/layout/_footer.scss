@@ -39,6 +39,11 @@
       }
     }
   }
+  &__links{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
   &__social{
     display: flex;
     gap: 2rem;
@@ -51,4 +56,14 @@
     right: -2rem;
     top: 0.5rem;
   }
+}
+
+// RESPONSIVE
+
+@include mediaQuery(520px){
+.footer{
+  &__wrapper{
+    @include evenGrid(1, 3rem);   
+  }
+}
 }
