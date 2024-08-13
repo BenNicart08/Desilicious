@@ -75,7 +75,8 @@
 @include mediaQuery(520px) {
   .contacts {
     &__details {
-      display: grid;
+      flex-direction: column;
+      gap: 3rem;
       margin-bottom: 3rem;
     }
     &__wrapper {
